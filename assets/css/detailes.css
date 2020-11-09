@@ -1,0 +1,66 @@
+.detailes {
+    min-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detailes__wrapper {
+    padding: 32px 0 0 0;
+}
+.detailes__img {
+    object-fit: contain;
+    width: 54%;
+    border-radius: 24px;
+}
+.detailes__info {
+    width: 40%;
+    min-height: 500px;
+}
+.detailes__title {
+    color: #012345;
+    font-size: 40px;
+    margin-top: 56px;
+    user-select: none;
+}
+.detailes__navigation {
+    margin-top: 32px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.detailes__link {
+    font-size: 16px;
+    color: #677B8F;
+    text-decoration: none;
+}
+.detailes__link_active {
+    color: #4959FF;
+}
+.detailes__rent {
+    height: 80px;
+    background-color: #F3F4F7;
+    border-radius: 16px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 29px;
+}
+.detailes__rent-text {
+    display: inline-block;
+}
+.detailes__rent-value {
+    display: inline-block;
+    color: #F84AB3;
+    user-select: none;
+}
+.detailes__rent-button {
+    width: 136px;
+    height: 48px;
+    background: #4959FF;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 14px;
+    color: #FCFCFC;
+}

@@ -1,0 +1,34 @@
+.terms__text {
+    font-weight: 300;
+    font-size: 14px;
+    color: #677B8F;
+    line-height: 146%;
+}
+.terms__conditions {
+    font-weight: 500;
+    font-size: 16px;
+    color: #012345;
+    margin: 24px 0 0 0;
+}
+.terms__conditions-list {
+    font-weight: 300;
+    font-size: 14px;
+    color: #677B8F;
+    line-height: 146%;
+    margin-top: 16px;
+    list-style: none;
+}
+.condition {
+    margin-bottom: 16px;
+}
+li::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 12px;
+    right: 20px;
+    width: 4px;
+    height: 4px;
+    background-color: #F84AB3;
+    border-radius: 100%;
+}

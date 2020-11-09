@@ -1,0 +1,22 @@
+.add {
+    width: 48px;
+    height: 48px;
+    background: #4959FF;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.add__plus {
+    display: block;
+    height: 14px;
+    width: 14px;
+    color: #FCFCFC;
+}
+.add-text {
+    font-size: 20px;
+    line-height: 140%;
+    color: #4959FF;
+    cursor: pointer;
+}

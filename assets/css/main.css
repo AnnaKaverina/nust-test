@@ -1,0 +1,23 @@
+* {
+    font-family: 'Codec Pro', sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 708px;
+    border-radius: 48px;
+    background-color:#F3F4F7;
+    padding: 56px 64px 64px 64px;
+}
+.button {
+    outline: none;
+    cursor: pointer;
+}
+.button:active {
+    box-shadow: inset -1px -4px 5px rgba(0,0,0,0.5);
+}
