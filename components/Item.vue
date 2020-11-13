@@ -15,6 +15,9 @@ export default {
     methods: {
         openDetails(id) {
             this.$router.push('/details/' + id);
+        },
+        setSelectedVehicleId(id) {
+            this.$store.dispatch('setSelectedVehicleId', id);
         }
     }
 }

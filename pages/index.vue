@@ -7,9 +7,9 @@
 <script>
 	import Items from '@/components/Items';
 	export default {
-		mounted() {
+		async created() {
 			if(this.$store.getters.getVehiclesFromState.length === 0) {
-				this.$store.dispatch('loadVehicles');
+				await this.$store.dispatch('loadVehicles');
 			}
 		}
 	}
