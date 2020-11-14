@@ -1,14 +1,21 @@
 <template>
     <div class="items-wrapper">
         <div class="select-add-wrapper">
-            <Select 
-            v-bind:select="select"
-            />
+            <div class="select-wrapper">
+                Rent
+                <select name="select" id="select" class="select" 
+                    v-model="selectedOption"
+                >
+                    <option v-for="item of select" :key="item">
+                        {{item}}
+                    </option>
+                </select>
+            </div>
             <Add />
         </div>
         <div class="items">
             <Item 
-                v-for="vehicle of vehicles" :key="vehicle.id"
+                v-for="vehicle of filteredVehicles" :key="vehicle.id"
                 v-bind:vehicle="vehicle"
             />
         </div>
@@ -16,15 +23,19 @@
 </template>
 
 <script>
-import Item from '@/components/Item'
-import Select from '@/components/Select'
-import Add from '@/components/Add'
+import Item from '@/components/Item';
+import Select from '@/components/Select';
+import Add from '@/components/Add';
 
 export default {
     components: {
         Item,
-        Select,
         Add
+    },
+    data() {
+        return {
+            selectedOption: 'whatever'
+        }
     },
     computed: {
         vehicles() {
@@ -32,6 +43,12 @@ export default {
         },
         select() {
             return this.separateSelect(this.$store.getters.getVehiclesFromState);
+        },
+        filteredVehicles() {
+            if(this.selectedOption == 'whatever') {
+                return this.vehicles;
+            }
+            return this.vehicles.filter(item => item.type == this.selectedOption);
         }
     },
     methods: {

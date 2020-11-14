@@ -1,5 +1,5 @@
 <template>
-    <option>{{item}}</option>
+    
 </template>
 
 <script>
