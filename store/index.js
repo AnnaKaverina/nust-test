@@ -14,6 +14,9 @@ const store = () => new Vuex.Store({
         },
         getSelectedVehicleId(state) {
             return state.selectedVehicleId;
+        },
+        getSelect(state) {
+            return state.select;
         }
     },
     

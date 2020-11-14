@@ -1,7 +1,7 @@
 <template>
     <div class="team">
         <div class="team__text">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            {{vehicle.team_text}}
         </div>
         <div class="team__title">Qualified specialists</div>
         <div class="team__items">
@@ -32,3 +32,9 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    props: ['vehicle']
+}
+</script>

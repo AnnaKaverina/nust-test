@@ -1,18 +1,17 @@
 <template>
-    
     <div class="detailes" v-if="vehicle">
         <img :src="vehicle.image" alt="img" class="detailes__img">
         <div class="detailes__info">
             <div class="detailes__title">{{vehicle.name}}</div>
             <div class="detailes__navigation">
-                <nuxt-link to="#" class="detailes__link detailes__link_active">Specifications</nuxt-link>
-                <nuxt-link to="#" class="detailes__link">Team</nuxt-link>
-                <nuxt-link to="#" class="detailes__link">Rent terms</nuxt-link>
+                <nuxt-link to="specifications" class="detailes__link">Specifications</nuxt-link>
+                <nuxt-link to="team" class="detailes__link">Team</nuxt-link>
+                <nuxt-link to="rent-terms" class="detailes__link">Rent terms</nuxt-link>
             </div>
             <div class="detailes__wrapper">
-                <Specifications style="display: none"/>
-                <Team style="display: none"/>
-                <Terms />
+                <NuxtChild 
+                    v-bind:vehicle="vehicle"
+                />
                 <div class="detailes__rent">
                     <div class="detailes__rent-text">
                         Rent for
@@ -26,9 +25,6 @@
 </template>
 
 <script>
-import Specifications from '@/components/Specifications';
-import Team from '@/components/Team';
-import Terms from '@/components/Terms';
 
 export default {
     async created() {

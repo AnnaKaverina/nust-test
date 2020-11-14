@@ -31,7 +31,17 @@ export default {
             return this.$store.getters.getVehiclesFromState;
         },
         select() {
-            return this.$store.getters.getSelect;
+            return this.separateSelect(this.$store.getters.getVehiclesFromState);
+        }
+    },
+    methods: {
+        separateSelect(arr) {
+            const select = new Set();
+            select.add('whatever');
+            for(let i = 0; i < arr.length; i++) {
+                select.add(arr[i].type);
+            }
+            return select;
         }
     }
 }

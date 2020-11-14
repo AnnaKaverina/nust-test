@@ -1,11 +1,14 @@
 .detailes {
-    min-height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .detailes__wrapper {
+    min-height: 550px;
     padding: 32px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .detailes__img {
     object-fit: contain;

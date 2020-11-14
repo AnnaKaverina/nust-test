@@ -14,7 +14,7 @@ export default {
     props: ['vehicle'],
     methods: {
         openDetails(id) {
-            this.$router.push('/details/' + id);
+            this.$router.push('/details/' + id + '/specifications');
         },
         setSelectedVehicleId(id) {
             this.$store.dispatch('setSelectedVehicleId', id);
