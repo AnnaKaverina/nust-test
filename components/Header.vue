@@ -2,12 +2,14 @@
     <div class="container">
         <div class="header">
             <div class="header__logo-group">
-                <div class="header__logo-group__logo">
-                    <div class="header__logo-group__img-wrapper">
-                        <img src="@/assets/img/img-logo.svg" alt="logo" class="header__logo-group__img-logo">
+                <NuxtLink to="/" class="header__link">
+                    <div class="header__logo-group__logo">
+                        <div class="header__logo-group__img-wrapper">
+                            <img src="@/assets/img/img-logo.svg" alt="logo" class="header__logo-group__img-logo">
+                        </div>
+                        <div class="header__logo-group__logo-title">Pepelane</div>
                     </div>
-                    <div class="header__logo-group__logo-title">Pepelane</div>
-                </div>
+                </NuxtLink>
                 <div class="header__logo-group__descr">World's first affordable airsharing</div>
             </div>
             <div class="header__options-group">

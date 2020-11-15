@@ -23,8 +23,9 @@
 </template>
 
 <script>
+import styleItems from '@/assets/sass/items.sass';
+import styleSelect from '@/assets/sass/select.sass';
 import Item from '@/components/Item';
-import Select from '@/components/Select';
 import Add from '@/components/Add';
 
 export default {

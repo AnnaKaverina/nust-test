@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import styleTerms from '@/assets/sass/terms.sass';
 export default {
     props: ['vehicle']
 }

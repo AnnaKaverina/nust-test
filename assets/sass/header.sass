@@ -1,0 +1,137 @@
+.header
+    height: 144px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__link
+        text-decoration: none
+    &__logo-group
+        width: 490px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__logo
+            width: 170px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__img-logo
+            display: block
+            margin: 3px auto
+            height: 48px
+            width: 48px
+        &__logo-title
+            font-weight: 500
+            font-size: 24px
+        &__descr
+            font-size: 16px
+            font-weight: 300
+    &__options-group
+        width: 534px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        &__mod
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 122px
+        &__mod-text
+            font-size: 16px
+            font-weight: 300
+        &__icons
+            width: 74px
+            display: flex
+            justify-content: space-around
+            align-items: center
+            margin-left: 60px
+        &__autor
+            width: 181px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__autor-name
+            font-size: 16px
+            font-weight: 500
+        &__autor-photo
+            border-radius: 100%
+        &__icon-notify, &__icon-message, &__mod-icon
+            &:hover
+                transform: scale(1.1)
+
+@media (max-width: 1090px)
+    .header
+        &__logo-group
+            width: 450px
+            &__descr
+                font-size: 14px
+        &__options-group
+            width: 400px
+            &__mod
+                width: 90px
+            &__mod-text
+                font-size: 12px
+            &__icons
+                margin-left: 20px
+
+@media (max-width: 915px)
+    .header
+        &__logo-group
+            width: 400px
+        &__options-group
+            width: 300px
+            &__autor
+                margin-left: 20px
+            &__icons
+                margin-left: 10px
+            &__mod
+                width: 110px
+
+@media (max-width: 775px)
+    .header__logo-group
+        width: 350px
+        &__descr
+            margin-left: 20px
+
+@media (max-width: 680px)
+    .header
+        &__logo-group__descr, &__options-group__autor-name
+            display: none
+        &__logo-group__logo
+            margin-left: 22px
+
+@media (max-width: 520px)
+    .header
+        height: 56px
+        &__options-group
+            margin-right: 16px
+            &__mod-text
+                display: none
+            &__mod
+                width: 20px
+            &__icons
+                margin-left: 0
+            &__autor
+                width: 56px
+            &__autor-photo
+                height: 32px
+                width: 32px
+        &__logo-group
+            &__logo
+                width: 120px
+            &__logo-title
+                font-size: 18px
+            &__img-logo
+                height: 32px
+                width: 32px
+
+@media (max-width: 435px)
+    .header__options-group
+        width: 135px
+        &__icons
+            width: 60px
+        &__mod-icon, &__icon-message, &__icon-notify
+            width: 16px
+        &__autor
+            width: 32px

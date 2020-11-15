@@ -26,6 +26,8 @@
 </template>
 
 <script>
+import styleSpecifications from '@/assets/sass/specifications.sass';
+
 export default {
     props: ['vehicle']
 }

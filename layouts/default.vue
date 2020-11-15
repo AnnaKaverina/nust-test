@@ -10,7 +10,9 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
+import Header from '@/components/Header';
+import styleHeader from '@/assets/sass/header.sass';
+import styleMain from '@/assets/sass/main.sass';
 
 export default {
   components: {

@@ -1,0 +1,46 @@
+.specifications
+    &__item
+        margin-bottom: 16px
+        display: flex
+        justify-content: space-between
+        &-text
+            width: 431px
+            margin-left: 10px
+        &-subtitle
+            font-size: 16px
+            color: #012345
+            font-weight: 500
+            margin-bottom: 8px
+            line-height: 152%
+            user-select: none
+        &-descr
+            font-weight: 300
+            font-size: 14px
+            line-height: 146%
+            user-select: none
+    &__descr
+        font-size: 14px
+        font-weight: 300
+        line-height: 146%
+        color: #677B8F
+        user-select: none
+    &__subtitle
+        margin: 32px 0
+        font-size: 24px
+        font-weight: 500
+        color: #012345
+
+@media (max-width: 775px)
+    .specifications__item
+        justify-content: space-around
+
+@media (max-width: 680px)
+    .specifications__item
+        justify-content: space-between
+
+@media (max-width: 520px)
+    .specifications
+        &__subtitle
+            margin: 20px 0
+        &__item
+            margin-bottom: 12px

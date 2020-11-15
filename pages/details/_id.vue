@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import styleDetailes from '@/assets/sass/detailes.sass';
 
 export default {
     async created() {

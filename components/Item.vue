@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import styleItem from '@/assets/sass/item.sass';
 export default {
     props: ['vehicle'],
     methods: {

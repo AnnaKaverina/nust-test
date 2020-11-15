@@ -9,6 +9,9 @@
 </template>
 
 <script>
+import styleError from '@/assets/sass/error.sass';
+import main from '@/assets/sass/main.sass';
+
 export default {
     props: ['error'],
     middleware: [

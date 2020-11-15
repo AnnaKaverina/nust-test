@@ -34,6 +34,8 @@
 </template>
 
 <script>
+import styleTeam from '@/assets/sass/team.sass';
+
 export default {
     props: ['vehicle']
 }

@@ -6,3 +6,12 @@
         </div>
     </div>
 </template>
+
+<script>
+import styleAdd from '@/assets/sass/add.sass';
+
+export default {
+    
+}
+
+</script>

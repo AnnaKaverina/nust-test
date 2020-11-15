@@ -1,0 +1,86 @@
+.detailes
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&__wrapper
+		min-height: 550px
+		padding: 32px 0 0 0
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__img
+		object-fit: contain
+		width: 54%
+		border-radius: 24px
+	&__info
+		width: 40%
+		min-height: 500px
+	&__title
+		color: #012345
+		font-size: 40px
+		margin-top: 56px
+		user-select: none
+	&__navigation
+		margin-top: 32px
+		width: 300px
+		display: flex
+		justify-content: space-between
+	&__link
+		font-size: 16px
+		color: #677B8F
+		text-decoration: none
+	&__link_active
+		color: #4959FF
+	&__rent
+		height: 80px
+		background-color: #F3F4F7
+		border-radius: 16px
+		padding: 0 32px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-top: 29px
+	&__rent-text
+		display: inline-block
+	&__rent-value
+		display: inline-block
+		color: #F84AB3
+		user-select: none
+	&__rent-button
+		width: 136px
+		height: 48px
+		background: #4959FF
+		border-radius: 12px
+		font-weight: 500
+		font-size: 16px
+		line-height: 14px
+		color: #FCFCFC
+
+@media (max-width: 775px)
+	.detailes
+		flex-direction: column
+		&__img
+			width: 343px
+			height: 332px
+		&__info
+			width: 90%
+
+@media (max-width: 520px)
+	.detailes
+		&__wrapper
+			padding-bottom: 132px
+			max-height: 900px
+			padding-top: 20px
+		&__title
+			font-size: 24px
+			margin-top: 22px
+		&__navigation
+			margin-top: 16px
+		&__rent
+			position: fixed
+			bottom: 32px
+			left: 50%
+			transform: translateX(-50%)
+			width: 343px
+			&-button
+				font-size: 14px

@@ -14,9 +14,9 @@ export default {
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    '@/assets/css/main.css', '@/assets/css/header.css', '@/assets/css/fonts.css', '@/assets/css/item.css', '@/assets/css/items.css', '@/assets/css/select.css', '@/assets/css/add.css', '@/assets/css/error.css', '@/assets/css/detailes.css', '@/assets/css/specifications.css', '@/assets/css/team.css', '@/assets/css/terms.css', '@/assets/css/media.css'
+    '@/assets/css/fonts.css'
   ],
-
+  
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
   ],
@@ -35,6 +35,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   },
+  
   router: {
     linkActiveClass: 'detailes__link_active'
   }
