@@ -1,11 +1,8 @@
 <template>
-	<div class="wrapper">
-		<Items />
-	</div>
+	<Items />
 </template>
 
 <script>
-	import styleMain from '@/assets/sass/main.sass';
 	import Items from '@/components/Items';
 	
 	export default {
@@ -15,4 +12,5 @@
 			}
 		}
 	}
+	
 </script>

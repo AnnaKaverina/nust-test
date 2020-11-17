@@ -1,9 +1,9 @@
 <template>
-    <div class="items-wrapper">
-        <div class="select-add-wrapper">
-            <div class="select-wrapper">
+    <div> 
+        <div :class="$style.selectAddWrapper">
+            <div :class="$style.selectWrapper">
                 Rent
-                <select name="select" id="select" class="select" 
+                <select name="select" id="select" :class="$style.select" 
                     v-model="selectedOption"
                 >
                     <option v-for="item of select" :key="item">
@@ -13,7 +13,7 @@
             </div>
             <Add />
         </div>
-        <div class="items">
+        <div :class="$style.items">
             <Item 
                 v-for="vehicle of filteredVehicles" :key="vehicle.id"
                 v-bind:vehicle="vehicle"
@@ -23,8 +23,7 @@
 </template>
 
 <script>
-import styleItems from '@/assets/sass/items.sass';
-import styleSelect from '@/assets/sass/select.sass';
+
 import Item from '@/components/Item';
 import Add from '@/components/Add';
 
@@ -64,3 +63,48 @@ export default {
     }
 }
 </script>
+
+<style module lang="sass">
+
+.items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.selectAddWrapper
+    height: 48px
+    display: flex
+    justify-content: space-between
+    margin: 0 0 8px 0
+.select
+    font-weight: 500
+    font-size: 40px
+    border: none
+    color: #4959FF
+    background-color: #F3F4F7
+    cursor: pointer
+    border: none
+.selectWrapper
+    width: 400px
+    font-weight: 500
+    font-size: 40px
+    color: #012345
+    line-height: 120%
+
+@media (max-width: 680px)
+    .select, .selectWrapper
+        font-size: 30px
+
+@media (max-width: 575px)
+    .selectAddWrapper
+        height: 32px
+
+@media (max-width: 520px)
+    .select
+        font-size: 24px
+    .selectWrapper
+        font-size: 24px
+        width: 200px
+    .selectAddWrapper
+        margin-bottom: 13px
+
+</style>

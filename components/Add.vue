@@ -1,17 +1,55 @@
 <template>
-    <div class="add-wrapper">
-        <div class="add-text">Add new</div>
-        <div class="add">
-            <img src="@/assets/img/plus.svg" alt="plus" class="add__plus">
+    <div :class="$style.wrapper">
+        <div :class="$style.text">Add new</div>
+        <div :class="$style.add">
+            <img src="@/assets/img/plus.svg" alt="plus" :class="$style.plus">
         </div>
     </div>
 </template>
 
 <script>
-import styleAdd from '@/assets/sass/add.sass';
 
 export default {
     
 }
 
 </script>
+
+<style module lang="sass">
+
+.add
+	width: 48px
+	height: 48px
+	background: #4959FF
+	border-radius: 16px
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+.plus
+	display: block
+	height: 14px
+	width: 14px
+	color: #FCFCFC
+.text
+	font-size: 20px
+	line-height: 140%
+	color: #4959FF
+	cursor: pointer
+.wrapper
+	width: 151px
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+@media (max-width: 680px)
+	.text
+		font-size: 16px
+
+@media (max-width: 575px)
+	.add
+		width: 32px
+		height: 32px
+		border-radius: 8px
+
+</style>
