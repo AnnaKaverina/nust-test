@@ -14,11 +14,13 @@
             <Add />
         </div>
         <div :class="$style.items">
-            <Item 
+            <Item
                 v-for="vehicle of filteredVehicles" :key="vehicle.id"
                 v-bind:vehicle="vehicle"
             />
+            <AddScreen v-if="addScreen"/>
         </div>
+        
     </div>
 </template>
 
@@ -26,6 +28,7 @@
 
 import Item from '@/components/Item';
 import Add from '@/components/Add';
+import AddScreen from '@/components/AddScreen';
 
 export default {
     components: {
@@ -49,6 +52,10 @@ export default {
                 return this.vehicles;
             }
             return this.vehicles.filter(item => item.type == this.selectedOption);
+        },
+        addScreen() {
+            console.log(this.$store.getters.addScreen);
+            return this.$store.getters.addScreen;
         }
     },
     methods: {

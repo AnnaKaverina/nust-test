@@ -5,7 +5,8 @@ const store = () => new Vuex.Store({
     state: {
         vehicles: [],
         select: ['whatever', 'airship', 'rocket', 'helicopter'],
-        selectedVehicleId: ''
+        selectedVehicleId: '',
+        addScreen: false
     },
     
     getters: {
@@ -17,6 +18,9 @@ const store = () => new Vuex.Store({
         },
         getSelect(state) {
             return state.select;
+        },
+        addScreen(state) {
+            return state.addScreen;
         }
     },
     
@@ -26,6 +30,9 @@ const store = () => new Vuex.Store({
         },
         setSelectedVehicleId(state, id) {
             state.selectedVehicleId = id;
+        },
+        showAddScreen(state) {
+            state.addScreen = !state.addScreen;
         }
     },
     
@@ -36,6 +43,9 @@ const store = () => new Vuex.Store({
         },
         setSelectedVehicleId(context, id) {
             context.commit('setSelectedVehicleId', id);
+        },
+        showAddScreen(context) {
+            context.commit('showAddScreen');
         }
     }
 });

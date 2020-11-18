@@ -1,16 +1,20 @@
 <template>
     <div :class="$style.wrapper">
         <div :class="$style.text">Add new</div>
-        <div :class="$style.add">
+        <button :class="$style.add" class="button" v-on:click="showAddScreen()">
             <img src="@/assets/img/plus.svg" alt="plus" :class="$style.plus">
-        </div>
+        </button>
     </div>
 </template>
 
 <script>
 
 export default {
-    
+    methods: {
+		showAddScreen() {
+			this.$store.dispatch('showAddScreen');
+		}
+	}
 }
 
 </script>
